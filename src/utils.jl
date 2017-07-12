@@ -8,6 +8,9 @@ function init_emulator()
     state.registers = zeros(Int8, 0xf  )
     state.stack     = zeros(Int8, 0xf  )
 
+    state.PC = 1
+    state.SP = 1
+
     return state
 end
 
